@@ -220,6 +220,9 @@
 
                 if (inputCaptchaValue === captchaValue) {
                     messageElement.textContent = "Login successful!";
+                    const thumbs=document.createElement('div');
+                    thumbs.textContent="👍";
+                    messageElement.appendChild(thumbs)
                     messageElement.classList.add("success");
                     messageElement.classList.remove("error");
                     document.querySelector("#email").value = "";
